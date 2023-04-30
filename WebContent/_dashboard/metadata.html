@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>metaData</title>
+</head>
+<body>
+
+<h1>Database Information</h1>
+
+
+<h2>Movies Table</h2>
+<table id=movie_data_table class="table table-striped">
+  <thead>
+  <tr>
+    <th>DATA NAME</th>
+    <th>DATA TYPE</th>
+  </tr>
+  <tr>
+    <td>id</td>
+    <td>varchar(10)</td>
+  </tr>
+  <tr>
+    <td>title</td>
+    <td>varchar(100)</td>
+  </tr>
+  <tr>
+    <td>year</td>
+    <td>integer</td>
+  </tr>
+  <tr>
+    <td>director</td>
+    <td>varchar(100)</td>
+  </tr>
+  </thead>
+  <tbody id=movie_data_table_body></tbody>
+</table>
+
+<h2>Stars Table</h2>
+<table id=stars_data_table class="table table-striped">
+  <thead>
+  <tr>
+    <th>DATA NAME</th>
+    <th>DATA TYPE</th>
+  </tr>
+  <tr>
+    <td>id</td>
+    <td>varchar(10)</td>
+  </tr>
+  <tr>
+    <td>name</td>
+    <td>varchar(100)</td>
+  </tr>
+  <tr>
+    <td>birthYear</td>
+    <td>integer</td>
+  </tr>
+  </thead>
+  <tbody id=stars_data_table_body></tbody>
+</table>
+
+
+<h2>stars_in_movies Table</h2>
+<table id=stars_in_movies_data_table class="table table-striped">
+  <thead>
+  <tr>
+    <th>DATA NAME</th>
+    <th>DATA TYPE</th>
+  </tr>
+  <tr>
+    <td>starId</td>
+    <td>varchar(10)</td>
+  </tr>
+  <tr>
+    <td>movieId</td>
+    <td>varchar(10)</td>
+  </tr>
+  </thead>
+  <tbody id=stars_in_movies_data_table_body></tbody>
+</table>
+
+
+<h2>Genres Table</h2>
+<table id=genres_data_table class="table table-striped">
+  <thead>
+  <tr>
+    <th>DATA NAME</th>
+    <th>DATA TYPE</th>
+  </tr>
+  <tr>
+    <td>id</td>
+    <td>integer</td>
+  </tr>
+  <tr>
+    <td>name</td>
+    <td>varchar(32)</td>
+  </tr>
+  </thead>
+  <tbody id=genres_data_table_body></tbody>
+</table>
+
+
+<h2>genres_in_movies Table</h2>
+<table id=genres_in_movies_data_table class="table table-striped">
+  <thead>
+  <tr>
+    <th>DATA NAME</th>
+    <th>DATA TYPE</th>
+  </tr>
+  <tr>
+    <td>genreId</td>
+    <td>integer</td>
+  </tr>
+  <tr>
+    <td>movieId</td>
+    <td>varchar(10)</td>
+  </tr>
+  </thead>
+  <tbody id=genres_in_movies_data_table_body></tbody>
+</table>
+
+
+<h2>Customers Table</h2>
+<table id=customers_data_table class="table table-striped">
+  <thead>
+  <tr>
+    <th>DATA NAME</th>
+    <th>DATA TYPE</th>
+  </tr>
+  <tr>
+    <td>id</td>
+    <td>integer</td>
+  </tr>
+  <tr>
+    <td>firstName</td>
+    <td>varchar(50)</td>
+  </tr>
+  <tr>
+    <td>lastName</td>
+    <td>varchar(50)</td>
+  </tr>
+  <tr>
+    <td>ccId</td>
+    <td>varchar(20)</td>
+  </tr>
+  <tr>
+    <td>address</td>
+    <td>varchar(200)</td>
+  </tr>
+  <tr>
+    <td>email</td>
+    <td>varchar(50)</td>
+  </tr>
+  <tr>
+    <td>password</td>
+    <td>varchar(128)</td>
+  </tr>
+  </thead>
+  <tbody id=customers_data_table_body></tbody>
+</table>
+
+
+
+<h2>Sales Table</h2>
+<table id=sales_data_table class="table table-striped">
+  <thead>
+  <tr>
+    <th>DATA NAME</th>
+    <th>DATA TYPE</th>
+  </tr>
+  <tr>
+    <td>id</td>
+    <td>integer</td>
+  </tr>
+  <tr>
+    <td>customerId</td>
+    <td>integer</td>
+  </tr>
+  <tr>
+    <td>movieId</td>
+    <td>varchar(10)</td>
+  </tr>
+  <tr>
+    <td>saleDate</td>
+    <td>date</td>
+  </tr>
+  </thead>
+  <tbody id=sales_data_table_body></tbody>
+</table>
+
+
+<h2>Creditcards Table</h2>
+<table id=creditcards_data_table class="table table-striped">
+  <thead>
+  <tr>
+    <th>DATA NAME</th>
+    <th>DATA TYPE</th>
+  </tr>
+  <tr>
+    <td>id</td>
+    <td>varchar(20)</td>
+  </tr>
+  <tr>
+    <td>firstName</td>
+    <td>varchar(50)</td>
+  </tr>
+  <tr>
+    <td>lastName</td>
+    <td>varchar(50)</td>
+  </tr>
+  <tr>
+    <td>expiration</td>
+    <td>date</td>
+  </tr>
+  </thead>
+  <tbody id=creditcards_data_table_body></tbody>
+</table>
+
+<h2>Ratings Table</h2>
+<table id=ratings_data_table class="table table-striped">
+  <thead>
+  <tr>
+    <th>DATA NAME</th>
+    <th>DATA TYPE</th>
+  </tr>
+  <tr>
+    <td>movieId</td>
+    <td>varchar(10)</td>
+  </tr>
+  <tr>
+    <td>rating</td>
+    <td>float</td>
+  </tr>
+  <tr>
+    <td>numVotes</td>
+    <td>integer</td>
+  </tr>
+  </thead>
+  <tbody id=ratings_data_table_body></tbody>
+</table>
+
+<h2>Employees Table</h2>
+<table id=employees_data_table class="table table-striped">
+  <thead>
+  <tr>
+    <th>DATA NAME</th>
+    <th>DATA TYPE</th>
+  </tr>
+  <tr>
+    <td>email</td>
+    <td>varchar(50)</td>
+  </tr>
+  <tr>
+    <td>password/td>
+    <td>varchar(20)<</td>
+  </tr>
+  <tr>
+    <td>fullname/td>
+    <td>varchar(100)<</td>
+  </tr>
+  </thead>
+  <tbody id=employees_data_table_body></tbody>
+</table>
+
+
+
+<a href="home.html"> Back to Dashboard</a>
+
+</body>
+</html>

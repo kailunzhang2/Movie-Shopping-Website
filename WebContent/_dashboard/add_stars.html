@@ -1,0 +1,37 @@
+
+<!-- This page will be redirected from any url if you are not logged in -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Stars Page</title>
+</head>
+<body>
+<h2>Add Stars Page</h2>
+<!-- Set the method to POST to avoid showing the username/password in the URL
+     The default action is disabled to allow your own implementation. -->
+<form id="add_star_form" method="post" action="#">
+  <label><b>Star Name</b></label>
+  <label>
+    <input name="name" placeholder="Enter Star Name" type="text">
+  </label>
+  <br>
+  <label><b>Birth Year</b></label>
+  <label>
+    <input name="year" placeholder="Enter Birth Year" type="text">
+  </label>
+  <br>
+  <input type="submit" value="Login">
+</form>
+
+<div id="add_star_error_message"></div>
+
+<a href="home.html"> Back to Dashboard</a>
+
+<!-- include jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- include our own JS file -->
+<script src="add_stars.js"></script>
+
+</body>
+</html>

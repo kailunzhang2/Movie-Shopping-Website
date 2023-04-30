@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cs122b-fall-team-60-kailun" />
+        <module name="cs122b-fall22-project1-api-example" />
+        <module name="kailun 1902 1022" />
+        <module name="cs122b-fall-team-60" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
